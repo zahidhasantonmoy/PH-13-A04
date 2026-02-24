@@ -56,42 +56,281 @@
         <button id="rejected-btn" class="btn btn-sm">Rejected</button>
     </div>
 
-    <section id="card">
-        <div class="flex flex-col md:flex-row justify-between mt-4 border-2 border-gray-300 p-4 md:p-6 rounded-lg relative">
-            <div id="card-content" class="w-full">
-                <div>
-                    <h2 class="text-xl font-bold">Mobile First Corp</h2>
-                    <p class="text-gray-600 mt-1">React Native Developer</p>
-                </div>
-                
-                <ul class="flex flex-wrap gap-x-6 gap-y-2 my-4 text-sm text-gray-600 list-disc pl-5">
-                    <li>Remote</li>
-                    <li>Full-time</li>
-                    <li>$130,000 - $175,000</li>
-                </ul>
+  <section id="job-listings" class="grid grid-cols-1 gap-6 p-4 ">
 
-                <div>
-                    <button id="btn-notAplied" class="badge bg-blue-100 text-blue-900 p-4 font-bold border-none">Not Applied</button>
-                </div>
+    <div class="flex flex-col md:flex-row justify-between mt-4 border-2 border-gray-300 p-4 md:p-6 rounded-lg relative bg-base-100">
+        <div class="w-full card-content">
+            <div>
+                <h2 class="text-xl font-bold">Mobile First Corp</h2>
+                <p class="text-gray-600 mt-1">React Native Developer</p>
+            </div>
+            
+            <ul class="flex flex-wrap gap-x-6 gap-y-2 my-4 text-sm text-gray-600 list-disc pl-5">
+                <li>Remote</li>
+                <li>Full-time</li>
+                <li>$130,000 - $175,000</li>
+            </ul>
 
-                <div class="mt-4">
-                    <p class="text-sm md:text-base leading-relaxed">Build cross-platform mobile applications using React Native. Work on products used by millions of users worldwide.</p>
-                </div>
-
-                <div id="card-buttons" class="flex flex-wrap gap-4 mt-6">
-                    <button id="card-interview-btn" class="btn btn-outline btn-success btn-sm md:btn-md">Interview</button>
-                    <button id="card-rejected-btn" class="btn btn-outline btn-error btn-sm md:btn-md">Rejected</button>
-                </div>
+            <div>
+                <button class="badge bg-blue-100 text-blue-900 p-4 font-bold border-none">Not Applied</button>
             </div>
 
-            <div id="dlt-btn" class="absolute top-4 right-4 md:static">
-                <button id="delete-btn" class="hover:text-red-600 transition-colors">
-                    <i class="fa-solid fa-trash"></i>
-                </button>
+            <div class="mt-4">
+                <p class="text-sm md:text-base leading-relaxed">Build cross-platform mobile applications using React Native. Work on products used by millions of users worldwide.</p>
+            </div>
+
+            <div class="flex flex-wrap gap-4 mt-6 card-buttons">
+                <button class="btn btn-outline btn-success btn-sm md:btn-md">Interview</button>
+                <button class="btn btn-outline btn-error btn-sm md:btn-md">Rejected</button>
             </div>
         </div>
-    </section>
 
+        <div class="absolute top-4 right-4 md:static dlt-btn">
+            <button class="hover:text-red-600 transition-colors delete-btn">
+                <i class="fa-solid fa-trash"></i>
+            </button>
+        </div>
+    </div>
+
+    <div class="flex flex-col md:flex-row justify-between mt-4 border-2 border-gray-300 p-4 md:p-6 rounded-lg relative bg-base-100">
+        <div class="w-full card-content">
+            <div>
+                <h2 class="text-xl font-bold">TechNova Solutions</h2>
+                <p class="text-gray-600 mt-1">Frontend Web Developer</p>
+            </div>
+            
+            <ul class="flex flex-wrap gap-x-6 gap-y-2 my-4 text-sm text-gray-600 list-disc pl-5">
+                <li>New York, NY</li>
+                <li>Full-time</li>
+                <li>$90,000 - $120,000</li>
+            </ul>
+
+            <div>
+                <button class="badge bg-blue-100 text-blue-900 p-4 font-bold border-none">Not Applied</button>
+            </div>
+
+            <div class="mt-4">
+                <p class="text-sm md:text-base leading-relaxed">Create beautiful, responsive web interfaces using React and Tailwind CSS. Join a fast-paced startup environment.</p>
+            </div>
+
+            <div class="flex flex-wrap gap-4 mt-6 card-buttons">
+                <button class="btn btn-outline btn-success btn-sm md:btn-md">Interview</button>
+                <button class="btn btn-outline btn-error btn-sm md:btn-md">Rejected</button>
+            </div>
+        </div>
+
+        <div class="absolute top-4 right-4 md:static dlt-btn">
+            <button class="hover:text-red-600 transition-colors delete-btn">
+                <i class="fa-solid fa-trash"></i>
+            </button>
+        </div>
+    </div>
+
+    <div class="flex flex-col md:flex-row justify-between mt-4 border-2 border-gray-300 p-4 md:p-6 rounded-lg relative bg-base-100">
+        <div class="w-full card-content">
+            <div>
+                <h2 class="text-xl font-bold">CloudScale Inc.</h2>
+                <p class="text-gray-600 mt-1">Backend Software Engineer</p>
+            </div>
+            
+            <ul class="flex flex-wrap gap-x-6 gap-y-2 my-4 text-sm text-gray-600 list-disc pl-5">
+                <li>Remote</li>
+                <li>Full-time</li>
+                <li>$140,000 - $180,000</li>
+            </ul>
+
+            <div>
+                <button class="badge bg-blue-100 text-blue-900 p-4 font-bold border-none">Not Applied</button>
+            </div>
+
+            <div class="mt-4">
+                <p class="text-sm md:text-base leading-relaxed">Design and build scalable APIs and microservices using Node.js and PostgreSQL to handle massive data loads.</p>
+            </div>
+
+            <div class="flex flex-wrap gap-4 mt-6 card-buttons">
+                <button class="btn btn-outline btn-success btn-sm md:btn-md">Interview</button>
+                <button class="btn btn-outline btn-error btn-sm md:btn-md">Rejected</button>
+            </div>
+        </div>
+
+        <div class="absolute top-4 right-4 md:static dlt-btn">
+            <button class="hover:text-red-600 transition-colors delete-btn">
+                <i class="fa-solid fa-trash"></i>
+            </button>
+        </div>
+    </div>
+
+    <div class="flex flex-col md:flex-row justify-between mt-4 border-2 border-gray-300 p-4 md:p-6 rounded-lg relative bg-base-100">
+        <div class="w-full card-content">
+            <div>
+                <h2 class="text-xl font-bold">PixelPerfect Studios</h2>
+                <p class="text-gray-600 mt-1">UI/UX Designer</p>
+            </div>
+            
+            <ul class="flex flex-wrap gap-x-6 gap-y-2 my-4 text-sm text-gray-600 list-disc pl-5">
+                <li>London, UK</li>
+                <li>Contract</li>
+                <li>$60/hour</li>
+            </ul>
+
+            <div>
+                <button class="badge bg-blue-100 text-blue-900 p-4 font-bold border-none">Not Applied</button>
+            </div>
+
+            <div class="mt-4">
+                <p class="text-sm md:text-base leading-relaxed">Craft intuitive user experiences and design wireframes in Figma. Collaborate closely with our frontend development team.</p>
+            </div>
+
+            <div class="flex flex-wrap gap-4 mt-6 card-buttons">
+                <button class="btn btn-outline btn-success btn-sm md:btn-md">Interview</button>
+                <button class="btn btn-outline btn-error btn-sm md:btn-md">Rejected</button>
+            </div>
+        </div>
+
+        <div class="absolute top-4 right-4 md:static dlt-btn">
+            <button class="hover:text-red-600 transition-colors delete-btn">
+                <i class="fa-solid fa-trash"></i>
+            </button>
+        </div>
+    </div>
+
+    <div class="flex flex-col md:flex-row justify-between mt-4 border-2 border-gray-300 p-4 md:p-6 rounded-lg relative bg-base-100">
+        <div class="w-full card-content">
+            <div>
+                <h2 class="text-xl font-bold">DataStream Analytics</h2>
+                <p class="text-gray-600 mt-1">Data Scientist</p>
+            </div>
+            
+            <ul class="flex flex-wrap gap-x-6 gap-y-2 my-4 text-sm text-gray-600 list-disc pl-5">
+                <li>Austin, TX</li>
+                <li>Full-time</li>
+                <li>$120,000 - $160,000</li>
+            </ul>
+
+            <div>
+                <button class="badge bg-blue-100 text-blue-900 p-4 font-bold border-none">Not Applied</button>
+            </div>
+
+            <div class="mt-4">
+                <p class="text-sm md:text-base leading-relaxed">Analyze large datasets, clean messy data, and build predictive machine learning models using Python and Pandas.</p>
+            </div>
+
+            <div class="flex flex-wrap gap-4 mt-6 card-buttons">
+                <button class="btn btn-outline btn-success btn-sm md:btn-md">Interview</button>
+                <button class="btn btn-outline btn-error btn-sm md:btn-md">Rejected</button>
+            </div>
+        </div>
+
+        <div class="absolute top-4 right-4 md:static dlt-btn">
+            <button class="hover:text-red-600 transition-colors delete-btn">
+                <i class="fa-solid fa-trash"></i>
+            </button>
+        </div>
+    </div>
+
+    <div class="flex flex-col md:flex-row justify-between mt-4 border-2 border-gray-300 p-4 md:p-6 rounded-lg relative bg-base-100">
+        <div class="w-full card-content">
+            <div>
+                <h2 class="text-xl font-bold">SecureNet Cyber</h2>
+                <p class="text-gray-600 mt-1">Cybersecurity Analyst</p>
+            </div>
+            
+            <ul class="flex flex-wrap gap-x-6 gap-y-2 my-4 text-sm text-gray-600 list-disc pl-5">
+                <li>Remote</li>
+                <li>Full-time</li>
+                <li>$100,000 - $135,000</li>
+            </ul>
+
+            <div>
+                <button class="badge bg-blue-100 text-blue-900 p-4 font-bold border-none">Not Applied</button>
+            </div>
+
+            <div class="mt-4">
+                <p class="text-sm md:text-base leading-relaxed">Monitor network traffic for security breaches, investigate violations, and implement strong firewall protocols.</p>
+            </div>
+
+            <div class="flex flex-wrap gap-4 mt-6 card-buttons">
+                <button class="btn btn-outline btn-success btn-sm md:btn-md">Interview</button>
+                <button class="btn btn-outline btn-error btn-sm md:btn-md">Rejected</button>
+            </div>
+        </div>
+
+        <div class="absolute top-4 right-4 md:static dlt-btn">
+            <button class="hover:text-red-600 transition-colors delete-btn">
+                <i class="fa-solid fa-trash"></i>
+            </button>
+        </div>
+    </div>
+
+    <div class="flex flex-col md:flex-row justify-between mt-4 border-2 border-gray-300 p-4 md:p-6 rounded-lg relative bg-base-100">
+        <div class="w-full card-content">
+            <div>
+                <h2 class="text-xl font-bold">Epic Studio X</h2>
+                <p class="text-gray-600 mt-1">C++ Game Developer</p>
+            </div>
+            
+            <ul class="flex flex-wrap gap-x-6 gap-y-2 my-4 text-sm text-gray-600 list-disc pl-5">
+                <li>Seattle, WA</li>
+                <li>Full-time</li>
+                <li>$110,000 - $150,000</li>
+            </ul>
+
+            <div>
+                <button class="badge bg-blue-100 text-blue-900 p-4 font-bold border-none">Not Applied</button>
+            </div>
+
+            <div class="mt-4">
+                <p class="text-sm md:text-base leading-relaxed">Program core gameplay mechanics, optimize engine performance, and work heavily within Unreal Engine 5.</p>
+            </div>
+
+            <div class="flex flex-wrap gap-4 mt-6 card-buttons">
+                <button class="btn btn-outline btn-success btn-sm md:btn-md">Interview</button>
+                <button class="btn btn-outline btn-error btn-sm md:btn-md">Rejected</button>
+            </div>
+        </div>
+
+        <div class="absolute top-4 right-4 md:static dlt-btn">
+            <button class="hover:text-red-600 transition-colors delete-btn">
+                <i class="fa-solid fa-trash"></i>
+            </button>
+        </div>
+    </div>
+
+    <div class="flex flex-col md:flex-row justify-between mt-4 border-2 border-gray-300 p-4 md:p-6 rounded-lg relative bg-base-100">
+        <div class="w-full card-content">
+            <div>
+                <h2 class="text-xl font-bold">Global Tech Works</h2>
+                <p class="text-gray-600 mt-1">IT Support Specialist</p>
+            </div>
+            
+            <ul class="flex flex-wrap gap-x-6 gap-y-2 my-4 text-sm text-gray-600 list-disc pl-5">
+                <li>Chicago, IL</li>
+                <li>Part-time</li>
+                <li>$25 - $35/hour</li>
+            </ul>
+
+            <div>
+                <button class="badge bg-blue-100 text-blue-900 p-4 font-bold border-none">Not Applied</button>
+            </div>
+
+            <div class="mt-4">
+                <p class="text-sm md:text-base leading-relaxed">Provide technical assistance to internal employees, troubleshoot hardware issues, and manage software installations.</p>
+            </div>
+
+            <div class="flex flex-wrap gap-4 mt-6 card-buttons">
+                <button class="btn btn-outline btn-success btn-sm md:btn-md">Interview</button>
+                <button class="btn btn-outline btn-error btn-sm md:btn-md">Rejected</button>
+            </div>
+        </div>
+
+        <div class="absolute top-4 right-4 md:static dlt-btn">
+            <button class="hover:text-red-600 transition-colors delete-btn">
+                <i class="fa-solid fa-trash"></i>
+            </button>
+        </div>
+    </div>
+
+</section>
     <section id="no-jobs"> 
         <div id="no-jobs-content" class="hidden text-center py-10">
             <img src="jobs.png" class="mx-auto w-40 mb-4" alt="No jobs">
