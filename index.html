@@ -44,11 +44,18 @@
 <hr class="my-4">
 </header>
 
-<main class="w-[80%] mx-auto">
-  <h1>Job Applications</h1>
-  <button id="all-btn" class="btn btn-primary">All</button>
-  <button id="interview-btn" class="btn ">Interview</button>
-  <button id="rejected-btn" class="btn ">Rejected</button>
+<main class="w-[95%] md:w-[80%] mx-auto">
+
+<div class="flex justify-between items-center">
+<h2 class="text-xl font-bold">Available Jobs</h2>
+<p id="jobsCount" class="font-bold">0</p>
+</div>
+<div class="mt-4 flex gap-3 flex-wrap">
+<button id="all-btn" class="btn btn-sm btn-primary">All</button>
+<button id="interview-btn" class="btn btn-sm">Interview</button>
+<button id="rejected-btn" class="btn btn-sm">Rejected</button>
+</div>
+
   <section id="card">
     <div class=" flex justify-between mt-4 border-2 border-gray-300 p-4 rounded-lg">
       <!-- Card content -->
