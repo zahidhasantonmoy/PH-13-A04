@@ -51,9 +51,9 @@
     </div>
 
     <div class="mt-4 flex gap-3 flex-wrap">
-        <button id="all-btn" class="btn btn-sm btn-primary">All</button>
-        <button id="interview-btn" class="btn btn-sm">Interview</button>
-        <button id="rejected-btn" class="btn btn-sm">Rejected</button>
+        <button  onclick="toggleButton('all-btn')" id="all-btn" class="btn btn-sm btn-primary">All</button>
+        <button onclick="toggleButton('interview-btn')" id="interview-btn" class="btn btn-sm">Interview</button>
+        <button onclick="toggleButton('rejected-btn')" id="rejected-btn" class="btn btn-sm">Rejected</button>
     </div>
 
   <section id="job-listings" class="grid grid-cols-1 gap-6 p-4 ">
@@ -339,6 +339,6 @@
         </div>
     </section>
 </main>
-    
+    <script src="script.js"></script>
 </body>
 </html>
