@@ -8,94 +8,97 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Job Application Tracker</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
-<link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css" />
-<style>
-    * {
-        font-family: 'Inter', sans-serif;
-    }
-</style>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css" />
+    <style>
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
 </head>
-<body class="bg-color[F8FAFC]">
-<header class=" w-[80%] text-black p-4 mx-auto">    
+<body class="bg-[#F8FAFC]">
+<header class="w-full md:w-[80%] text-black p-4 mx-auto">    
     <h1 class="text-2xl font-bold">Job Application Tracker</h1>
-    <div class="header-card flex gap-4 mt-4 ">  
-        
-        <div class="card card-dash bg-base-200 w-96">
-  <div class="card-body">
-    <h2 class="card-title">Total</h2>
-    <p>8</p>
-  </div>
-</div>
-<div class="card card-dash bg-base-200 w-96">
-  <div class="card-body">
-    <h2 class="card-title">Interview</h2>
-    <h3 class="text-green-600 font-bold">2</h3>
-  </div>
-</div>
-<div class="card card-dash bg-base-200 w-96">
-  <div class="card-body">
-    <h2 class="card-title">Rejected</h2>
-    <h3 class="text-red-600 font-bold">0</h3>
-  </div>
-</div>
+    <div class="header-card flex flex-col md:flex-row gap-4 mt-4">  
+        <div class="card card-dash bg-base-200 w-full md:w-1/3">
+            <div class="card-body">
+                <h2 class="card-title text-sm md:text-base">Total</h2>
+                <p class="text-xl font-bold">8</p>
+            </div>
+        </div>
+        <div class="card card-dash bg-base-200 w-full md:w-1/3">
+            <div class="card-body">
+                <h2 class="card-title text-sm md:text-base">Interview</h2>
+                <h3 class="text-green-600 font-bold text-xl">2</h3>
+            </div>
+        </div>
+        <div class="card card-dash bg-base-200 w-full md:w-1/3">
+            <div class="card-body">
+                <h2 class="card-title text-sm md:text-base">Rejected</h2>
+                <h3 class="text-red-600 font-bold text-xl">0</h3>
+            </div>
+        </div>
     </div>
-<hr class="my-4">
+    <hr class="my-4">
 </header>
 
-<main class="w-[95%] md:w-[80%] mx-auto">
+<main class="w-[95%] md:w-[80%] mx-auto pb-10">
 
-<div class="flex justify-between items-center">
-<h2 class="text-xl font-bold">Available Jobs</h2>
-<p id="jobsCount" class="font-bold">0</p>
-</div>
-<div class="mt-4 flex gap-3 flex-wrap">
-<button id="all-btn" class="btn btn-sm btn-primary">All</button>
-<button id="interview-btn" class="btn btn-sm">Interview</button>
-<button id="rejected-btn" class="btn btn-sm">Rejected</button>
-</div>
-
-  <section id="card">
-    <div class=" flex justify-between mt-4 border-2 border-gray-300 p-4 rounded-lg">
-      <!-- Card content -->
-      <div id="card-content">
-       <div>
-        <h2 class="text-xl font-bold">Mobile First Corp</h2>
-        <br>
-        <p>React Native Developer</p>
-        </div>
-        <br>
-        <div class="flex space-x-3 px-5 mx-4  gap-3 justify-self-auto">
-        <li>Remote</li>
-        <li>Full-time</li>
-        <li>$130,000 - $175,000</li>
-        </div>
-        <br>
-        <div>
-          <button id="btn-notAplied" class="badge bg-blue-100 text-blue-900 p-4 font-bold">Not Applied</button>
-        </div>
-        <br>
-        <div>
-        <p>Build cross-platform mobile applications using React Native. Work on products used by millions of users worldwide.</p>
-       </div>
-       <br>
-       <div id="card-buttons" class="flex gap-4 mt-4">
-        <button id="card-interview-btn" class="btn btn-outline btn-success">Interview</button>
-        <button id="card-rejected-btn" class="btn btn-outline btn-error">Rejected</button>
-       </div>
-       </div>
-      <div id="dlt-btn">
-      <button id="delete-btn"><i class="fa-solid fa-trash"></i></button>
+    <div class="flex justify-between items-center">
+        <h2 class="text-xl font-bold">Available Jobs</h2>
+        <p id="jobsCount" class="font-bold">0</p>
     </div>
-  
-    
-  </section>
-  <section id="no-jobs"> <div id="no-jobs-content" class=" text-center py-10">
-<img src="jobs.png" class="mx-auto w-40 mb-4">
-<h2 class="text-lg font-bold">No jobs Available</h2>
-<p class="text-gray-500">There are no jobs in this tab</p>
-</div></section>
+
+    <div class="mt-4 flex gap-3 flex-wrap">
+        <button id="all-btn" class="btn btn-sm btn-primary">All</button>
+        <button id="interview-btn" class="btn btn-sm">Interview</button>
+        <button id="rejected-btn" class="btn btn-sm">Rejected</button>
+    </div>
+
+    <section id="card">
+        <div class="flex flex-col md:flex-row justify-between mt-4 border-2 border-gray-300 p-4 md:p-6 rounded-lg relative">
+            <div id="card-content" class="w-full">
+                <div>
+                    <h2 class="text-xl font-bold">Mobile First Corp</h2>
+                    <p class="text-gray-600 mt-1">React Native Developer</p>
+                </div>
+                
+                <ul class="flex flex-wrap gap-x-6 gap-y-2 my-4 text-sm text-gray-600 list-disc pl-5">
+                    <li>Remote</li>
+                    <li>Full-time</li>
+                    <li>$130,000 - $175,000</li>
+                </ul>
+
+                <div>
+                    <button id="btn-notAplied" class="badge bg-blue-100 text-blue-900 p-4 font-bold border-none">Not Applied</button>
+                </div>
+
+                <div class="mt-4">
+                    <p class="text-sm md:text-base leading-relaxed">Build cross-platform mobile applications using React Native. Work on products used by millions of users worldwide.</p>
+                </div>
+
+                <div id="card-buttons" class="flex flex-wrap gap-4 mt-6">
+                    <button id="card-interview-btn" class="btn btn-outline btn-success btn-sm md:btn-md">Interview</button>
+                    <button id="card-rejected-btn" class="btn btn-outline btn-error btn-sm md:btn-md">Rejected</button>
+                </div>
+            </div>
+
+            <div id="dlt-btn" class="absolute top-4 right-4 md:static">
+                <button id="delete-btn" class="hover:text-red-600 transition-colors">
+                    <i class="fa-solid fa-trash"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <section id="no-jobs"> 
+        <div id="no-jobs-content" class="hidden text-center py-10">
+            <img src="jobs.png" class="mx-auto w-40 mb-4" alt="No jobs">
+            <h2 class="text-lg font-bold">No jobs Available</h2>
+            <p class="text-gray-500">There are no jobs in this tab</p>
+        </div>
+    </section>
 </main>
     
 </body>
